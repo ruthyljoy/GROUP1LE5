@@ -1,0 +1,39 @@
+<div>
+  <h1>Register</h1>
+<form name="form"
+        (ngSubmit)="onSubmit()"
+        #f="ngForm">
+        <div>
+
+        <label for="username">Username </label>
+    <input type="text"
+           name="Username"
+           [(ngModel)]="form.username"
+           required
+           #username="ngModel">
+</div>
+           <label for="password">Password </label>
+    <input type="password"
+           name="password"
+           [(ngModel)]="form.password"
+           required
+           #password="ngModel">
+<div>
+           <label for="firstName">First Name </label>
+    <input type="text"
+           name="firstName"
+           [(ngModel)]="form.firstName"
+           required
+           #firstName="ngModel">
+</div>
+<div>
+           <label for="lastName">Last Name </label>
+    <input type="text"
+           name="lastName"
+           [(ngModel)]="form.lastName"
+           required
+           #lastName="ngModel">
+</div>
+    <button>Submit</button>
+</form>
+</div>
